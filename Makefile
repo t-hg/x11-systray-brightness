@@ -2,7 +2,7 @@ GTK_CFLAGS=$(shell pkg-config --cflags gtk+-3.0)
 GTK_LIBS=$(shell pkg-config --libs gtk+-3.0)
 GTK_LIBS+=$(shell pkg-config --libs alsa)
 BIN=x11-systray-brightness
-INSTALL_DIR=/usr/locbrightness
+INSTALL_DIR=/usr/local/bin
 
 .PHONY: default
 default: build
